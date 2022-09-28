@@ -34,7 +34,7 @@
 # while x + y + z != 3:
 
 #     #провекра задачи
-#     if not(x or y or z) == (not x) and (not y) and (not z):
+#     if (not(x or y or z)) == ((not x) and (not y) and (not z)):
 #         print(f'{x} {y} {z}', True)
 #     else:
 #         print(f'{x} {y} {z}', False)
@@ -50,10 +50,10 @@
 #             z = 0
 #     else:
 #         z = 1
-#
+
 # # так как у нас цикл заканчивается когда x=1 y=1 z=1 в блок else добавляем последнюю проверку
 # else:
-#     if not(x or y or z) == (not x) and (not y) and (not z):
+#     if (not(x or y or z)) == ((not x) and (not y) and (not z)):
 #         print(f'{x} {y} {z}', True)
 #     else:
 #         print(f'{x} {y} {z}', False)
