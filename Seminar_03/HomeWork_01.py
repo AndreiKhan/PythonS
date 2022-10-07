@@ -22,3 +22,9 @@ def countOdd(list):
 
 # обращаемся к методу
 print(countOdd(list))
+
+
+# или так _______
+
+spisok = [2, 3, 5, 9, 3]
+print(sum(spisok[1::2]))

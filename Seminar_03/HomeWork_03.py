@@ -29,3 +29,16 @@ def minMax(list):
 
 
 minMax(list)
+
+
+
+
+# или так _______
+
+spisok = [1.1, 1.2, 3.1, 5, 10.01]
+
+sp_frac = [abs(i - int(i)) for i in spisok if int(i) != i]
+
+print(sp_frac)
+
+print(max(sp_frac) - min(sp_frac))

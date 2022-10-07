@@ -27,3 +27,20 @@ def countPair(list):
 
 # выводим список с посчитанными парами
 print(countPair(list))
+
+
+
+# или так _______
+
+spsk = [2, 3, 4, 5, 6]
+
+def pair_number(lst):
+
+    sqrt = []
+
+    for i in range((len(lst) + 1) // 2):
+        sqrt.append(lst[i] * lst[len(lst) - 1 - i])
+    
+    return sqrt
+
+print(pair_number(spsk))
