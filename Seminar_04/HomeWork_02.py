@@ -28,3 +28,26 @@ def factor(num):
 
 # выводим полученный список
 print(factor(number))
+
+
+
+
+# или так _______
+
+def prime(number):
+    res = []
+    d = 2
+
+    while d ** 2 <= number:
+        if number % d == 0:
+            res.append(d)
+            number //= d
+        else:
+            d += 1
+        
+    if number > 1:
+        res.append(number)
+    
+    return res
+
+print(prime(200))

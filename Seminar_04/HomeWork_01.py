@@ -1,11 +1,11 @@
 # Вычислить число c заданной точностью d
 
 
-import math
+from math import pi
 
 # пусть d = 0.001
 d = 0.001
-p = math.pi
+p = pi
 
 # метод для округления числа
 # numb - число которое надо округлить
@@ -27,3 +27,14 @@ def roundNum(numb, roun):
 # обращаемся к методу и получаем нужное число
 p = roundNum(p, d)
 print(p)
+
+
+
+
+# или так _______
+
+def my_round(n, d):
+    return round(n, d)
+
+d = 0.0001
+print(my_round(p, str(d).count('0')))

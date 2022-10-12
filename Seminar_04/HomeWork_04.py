@@ -2,6 +2,7 @@
 # Сформировать случайным образом список коэффициентов 
 # (значения от 0 до 100) многочлена и записать в файл многочлен степени k.
 
+from random import randint
 
 # задаем началльные данные
 k = 3
@@ -35,3 +36,40 @@ def polynomial(listNumbers, ko):
 
 
 polynomial(numbers, k)
+
+
+
+
+# или так _______
+
+def create_formula(factors):
+    k = len(factors) - 1
+    res = ""
+
+    for i in range(0, len(factors)):
+
+        if i == len(factors) - 1:
+            res += f"{factors[i]}"
+
+        elif k == 1:
+            res += f"{factors[i]}x + "
+
+        else:
+            res += f"{factors[i]}x^{k} + "
+
+        k -= 1
+    
+    return res
+
+print(create_formula([2, 3, 4]))
+
+def polinome(k, file_name):
+    factors = [randint(1, 101) for _ in range(0, k + 1)]
+    res = create_formula(factors)
+
+    with open(file_name, "w", encoding="UTF-8") as f:
+        f.write(' '.join([str(i) for i in factors[::-1]]) + '\n')
+        f.write(res)
+
+polinome(3, 'file1.txt')
+polinome(3, 'file2.txt')

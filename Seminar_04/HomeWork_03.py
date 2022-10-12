@@ -21,3 +21,12 @@ def unikList(numbers):
 
 
 print(unikList(listNumbers))
+
+
+
+
+# или так _______
+
+sp = [1, 2, 3, 3, 4, 2, 4]
+
+res = [i for i in sp if sp.count(i) == 1]
