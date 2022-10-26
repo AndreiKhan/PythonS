@@ -8,7 +8,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-TOKEN = '5763560771:AAGbHj3iI3WNhIqUufbGknLFJjNmkL0ubBs'
+TOKEN = 'ТОКЕН'
 
 
 def start(update, context):

@@ -2,7 +2,7 @@ from telegram import Update, Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler
 from random import randint
 
-bot_token = '5763560771:AAGbHj3iI3WNhIqUufbGknLFJjNmkL0ubBs'
+bot_token = 'ТОКЕН'
 bot = Bot(bot_token)
 updater = Updater(bot_token, use_context=True)
 dispatcher = updater.dispatcher
